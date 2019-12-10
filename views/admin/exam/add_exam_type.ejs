@@ -1,0 +1,88 @@
+<%- include ../../adminlayouts/header.ejs %>
+
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+          Add Exam Type
+        </h1>
+    </section>
+    <section class="content">
+    <div class="row">
+        <div class="col-md-8">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Add Exam Type</h3>
+            </div>
+            <% if (messages.error) { %>
+              <p style="color:red"><%- messages.error %></p>
+          <% } %>
+    
+          <% if (messages.success) { %>
+              <p style="color:green"><%- messages.success %></p>
+          <% } %>
+          <form class="form-horizontal" action="/admin/exam/addexamtype" method="post" name="form2">
+              <div class="box-body">
+                <div class="form-group">
+              <label class="control-label col-sm-2" for="exam_type">Exam Type:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="exam_type" value=""/>
+            </div>
+           </div>
+
+            <button type="submit" class="btn btn-primary pull-right">Add</button>
+            </form>
+              </div>
+             </form> 
+          </div>
+        </div>
+    </div>
+    <div class="box" >
+            <div class="box-body">
+              <table class="table table-bordered">
+                <thead >
+                  <tr>
+                  <th>S.NO.</th>
+                  <th>Exam Type</th>
+                  <th style="width: 40px">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% if (locals.data) {%>
+                <% locals.data.forEach(function(cl,index){%>
+                <tr id="mydlete<%= cl.id %>">
+                <td><%= index + 1 %></td>
+                <td><%= cl.exam_type %></td>
+                <td><button class="btn btn-info dlsub" data-id="<%= cl.id %>" >Delete</button></td>
+              </tr>
+                <% }) %>
+                <% } %>
+
+              </tbody>
+            </table>
+            </div>
+          </div>
+</div>
+</section>
+
+
+<%- include ../../adminlayouts/footer.ejs %>
+
+<script>
+  $(document).on('click','.dlsub',function(){
+  var x = confirm("Are You Sure!!");
+  if(x == true){
+  var a =$(this)
+  $.get('/admin/exam/exam_type_delete?id='+$(this).data('id'),function(res){
+    alert(res.message)
+    if(res.success == 1){
+    $('#mydlete'+a.data('id')).remove()
+    }
+
+  },'json')
+  }else{
+
+ return false; 
+}
+})
+</script>

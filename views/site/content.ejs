@@ -1,0 +1,118 @@
+<%- include ../sitelayouts/header.ejs %>
+	<% locals.boards = JSON.parse(locals.boards); %>
+
+		<div class="page_heading">
+			<img src="../images/1.jpg" alt="" width="100%" height="150">
+			<div class="pagesub_heading">
+				<h1>Class Wise Material</h1>
+			</div>
+		</div>
+
+		<div class="container-fluid side_tabbar my-3">
+			<div class="row">
+				<div class="col-md-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="/">Home</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">Class Wise</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xl-3">
+					<div class="side_barheading">
+						<h6 href="class-wise">Topics
+							<i class="fas fa-hand-point-right hand_icon"></i>
+						</h6>
+					</div>
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+						<!-- <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#link1" role="tab" aria-controls="profile"><i class="fas fa-chevron-right"></i> Class X</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#link2" role="tab" aria-controls="messages"><i class="fas fa-chevron-right"></i> Class XI</a>
+				  </li>
+				
+			  </ul>
+			  <!--div class="side_navbar">
+			  	<h5>Other Link</h5>
+			  	<a href=""><i class="fas fa-chevron-right"></i> Sub Heading-1</a>
+			  	<a href=""><i class="fas fa-chevron-right"></i> Sub Heading-2</a>
+			  	<a href=""><i class="fas fa-chevron-right"></i> Sub Heading-3</a>
+			  </div-->
+						<div class="filter_bar">
+							<% if (locals.sub) { %>
+								<% locals.sub.forEach(function(cat){%>
+									<a href="subject-wise?id=<%= cat.id %>">
+										<i class="fas fa-chevron-right"></i> Subject Wise</a>
+									<% }) %>
+										<% } %>
+
+											<% if (locals.boards) { %>
+												<% locals.boards.forEach(function(cat){%>
+													<a href="board-material?id=<%= cat.id %>">
+														<i class="fas fa-chevron-right"></i> Study Material By Board</a>
+
+													<% }) %>
+														<% } %>
+															<a href="entranc-exam">
+																<i class="fas fa-chevron-right"></i> Extrance Exam Wise</a>
+
+															<a href="#">
+																<i class="fas fa-chevron-right"></i> GOVT. Exam Wise</a>
+															<a href="#">
+																<i class="fas fa-chevron-right"></i> UR Interset Wise</a>
+															<a href="#">
+																<i class="fas fa-chevron-right"></i> Engineering Study Material</a>
+															<a href="#">
+																<i class="fas fa-chevron-right"></i> Medical Study Material</a>
+						</div>
+
+				</div>
+				<div class="col-md-8 col-sm-8 col-xl-9">
+					<div class="tab-content">
+						<div class="tab-pane active" id="activelink" role="tabpanel">
+							<div class="main_title">
+								Topics List
+
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-8">
+									<iframe src="http://www.hbcse.tifr.res.in/episteme/episteme-1/allabs/conceptofforce.pdf" style="width:600px; height:500px;"
+									 frameborder="0"></iframe>
+								</div>
+								<div class="col-md-4">
+
+								</div>
+							</div>
+
+							<div class="row" style="margin-top:10px">
+								<div class="col-md-3">
+									<a class="btn btn-success">
+										<h2>Download Now</h2>
+									</a>
+								</div>
+								<div class="col-md-3" style="">
+									<a class="btn btn-success">
+										<h2>Download Flip book</h2>
+									</a>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="tab-pane" id="link2" role="tabpanel">XI</div>
+						<div class="tab-pane" id="link3" role="tabpanel">XII</div>
+						<div class="tab-pane" id="link4" role="tabpanel">B.Sc</div>
+						<div class="tab-pane" id="link5" role="tabpanel">BCA</div>
+						<div class="tab-pane" id="link6" role="tabpanel">BA</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%- include ../sitelayouts/footer.ejs %>

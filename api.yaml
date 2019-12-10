@@ -1,0 +1,283 @@
+openapi: 3.0.0
+servers: []
+info:
+  description: This is a simple API
+  version: "1.0.0"
+  title: Simple Inventory API
+  contact:
+    email: you@your-company.com
+  license:
+    name: Apache 2.0
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+tags:
+  - name: dummy
+    description: Dummy api
+  - name: registration
+    description: Resistration api
+  - name: dasboard
+    description: Dashboard api
+paths:
+  /dummy:
+    get:
+      tags:
+        - dummy
+      summary: searches inventory
+      operationId: searchInventory
+      description: |
+        By passing in the appropriate options, you can search for
+        available inventory in the system
+      parameters:
+        - in: query
+          name: searchString
+          description: pass an optional search string for looking up inventory
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip
+          description: number of records to skip for pagination
+          schema:
+            type: integer
+            format: int32
+            minimum: 0
+        - in: query
+          name: limit
+          description: maximum number of records to return
+          schema:
+            type: integer
+            format: int32
+            minimum: 0
+            maximum: 50
+      responses:
+        "200":
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: string
+                example: phone
+        "400":
+          description: bad input parameter
+    post:
+      tags:
+        - dummy
+      summary: adds an inventory item
+      operationId: addInventory
+      description: Adds an item to the system
+      responses:
+        "201":
+          description: item created
+        "400":
+          description: "invalid input, object invalid"
+        "409":
+          description: an existing item already exists
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+              example: phone
+        description: Inventory item to add
+  /register/start:
+    post:
+      tags:
+        - registration
+      summary: sends email/phone as entry
+      operationId: registerUserStart
+      description: Adds an item to the system
+      responses:
+        "200":
+          description: email/sms sent for verification
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  method:
+                    type: string
+                    example: phone
+                  value:
+                    type: string
+                    example: +91-9876543210
+        "502":
+          description: error processing request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: email@email.com
+                phone:
+                  type: string
+                  format: phone
+                  example: +91-9876543210
+                method:
+                  type: string
+                  example: phone
+  /register/verify:
+    post:
+      tags:
+        - registration
+      summary: sends username, otp and password
+      operationId: registerUserVerify
+      description: Verify the user
+      responses:
+        "200":
+          description: registration successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  token:
+                    type: string
+                    example: 437bn8tvytbtg64328
+                  method:
+                    type: string
+                    example: phone
+                  value:
+                    type: string
+                    example: +91-9876543210
+        "502":
+          description: error processing request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  example: 437bn8tvytbtg64328
+  /register/userdata:
+    post:
+      tags:
+        - registration
+      summary: sends username, otp and password
+      operationId: registerUserVerify
+      description: Verify the user
+      responses:
+        "200":
+          description: registration successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        "502":
+          description: error processing request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: Ashok Kumar
+                password:
+                  type: string
+                  example: SecurePassword
+                otp:
+                  type: string
+                  example: 12e56w
+                token:
+                  type: string
+                  example: 437bn8tvytbtg64328
+  /dasboard/performanceData:
+    post:
+      tags:
+        - dasboard
+      summary: data related to user performance
+      operationId: performanceData
+      description: sends data to be rendered in charts
+      responses:
+        "200":
+          description: data for charts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  yearlyPerformance:
+                    type: object
+                    properties:
+                      months:
+                        type: array
+                        example: ["Nov-2019", "Dec-2019", "Jan-2020"]
+                      datasets:
+                        $ref: "#/components/schemas/Datasets"
+                  weeklyPerformance:
+                    type: object
+                    properties:
+                      days:
+                        type: array
+                        example: ["Fri", "Sat", "Sun", "Mon"]
+                      datasets:
+                        $ref: "#/components/schemas/Datasets"
+        "502":
+          description: error processing request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: email@email.com
+components:
+  schemas:
+    Datasets:
+      type: array
+      items:
+        type: object
+        properties:
+          label:
+            type: string
+            example: Quizzes or Score or %Score
+          data:
+            type: array
+            example: [12, 43, 6]
+    Error:
+      type: object
+      properties:
+        error:
+          type: object
+          required:
+            - status
+            - message
+          properties:
+            status:
+              type: number
+              example: 502
+            message:
+              type: string
+              example: Email already registered

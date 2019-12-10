@@ -1,0 +1,225 @@
+<%- include ../sitelayouts/header.ejs %>
+
+    <div class="page_heading">
+    	<img src="../images/banner.jpg" alt="" width="100%" height="150">
+    	<div class="pagesub_heading">
+    		<h1>Subject Wise <span class="main_color">Material</span></h1>
+    	</div>
+    </div>
+      
+	<div class="container-fluid side_tabbar my-3">
+		<div class="row">
+			<div class="col-md-12">
+				<nav aria-label="breadcrumb">
+				    <ol class="breadcrumb">
+				      <li class="breadcrumb-item"><a href="/">Home</a></li>
+				       <% locals.data.subject.forEach(function(cat){%>
+						      
+					   <% if(locals.data.current_subs == cat.id) { %>
+				      <li class="breadcrumb-item active" aria-current="page"><%= cat.name %></li>
+				      <% } %>
+			      <% }) %>
+				    </ol>
+				</nav>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xl-3">
+			  <div class="side_barheading">
+			  	<h6 href="subject-wise.ejs">Subject Wise <i class="fas fa-hand-point-right hand_icon"></i></h6>
+			  </div>
+			  <ul class="nav nav-tabs" id="myTab" role="tablist">
+			  	      <% if (locals.data.subject) { %>
+			           <% locals.data.subject.forEach(function(cat){%>
+			      <li class="nav-item">
+				    <a class="nav-link <%= locals.data.current_subs == cat.id ? 'active' : '' %> tabbar_heading" id="tab12" href="#/" role="tab" data-value="<%= cat.id %>" aria-controls="home"><i class="fas fa-chevron-right"></i><%= cat.name %></a>
+				  </li>
+				  <% }) %>
+			      <% } %>
+
+			
+			  </ul>
+			  
+			  <div class="filter_bar">
+		
+				<% if (locals.data.education) { %>
+			   <% locals.data.education.forEach(function(cat){%>	   
+			  		
+			  	<a href="class-wise?id=<%= cat.id %>"><i class="fas fa-chevron-right"></i>Class Wise</a>
+
+                   <% }) %>
+			       <% } %>
+                <% if (locals.data.boards) { %>
+			   <% locals.data.boards.forEach(function(cat){%>
+
+			  	<a href="board-material?id=<%= cat.id %>"><i class="fas fa-chevron-right"></i> Study Material By Board</a>
+                  <% }) %>
+			       <% } %>
+
+			  	<a href="entranc-exam"><i class="fas fa-chevron-right"></i> Extrance Exam Wise</a>
+			  	<a href="#"><i class="fas fa-chevron-right"></i> GOVT. Exam Wise</a>
+			  	<a href="#"><i class="fas fa-chevron-right"></i> UR Interset Wise</a>
+				<a href="#"><i class="fas fa-chevron-right"></i> Engineering Study Material</a>
+				<a href="#"><i class="fas fa-chevron-right"></i> Medical Study Material</a>
+				
+			  </div>
+			</div>
+			<div class="col-md-4 col-sm-8 col-xl-9">
+				<div class="tab-content">
+					 
+					<div class="tab-pane active" id="" role="tabpanel">
+						<div class="main_title">
+                           
+							 <% locals.data.subject.forEach(function(cat){%>
+						      
+							   <% if(locals.data.current_subs == cat.id) { %>
+							   		<a href="#/" id="myid"  data-custom-value="<%= cat.id %>"><%= cat.name %></a> 
+							   		<% }%> 
+							  
+							  <% }) %>
+							  
+                          <select id="data" style="margin-left: 265px;">
+                          	 <option value="">Choose Class</option>
+                          	<% if (locals.data.myclass) {
+
+			                      %>
+			                   <% locals.data.myclass.forEach(function(cat){
+
+			                       %>
+						   
+						     <option value="<%= cat.id %>" <%= locals.data.current_drop == cat.id ? 'selected' : '' %>><%= cat.name %></option>
+                            <% }) %>
+			                <% } %>
+					    </select>
+                       	</div>
+					
+                           
+					  	<div id="owl-demo" class="text-center">
+					  		<div class="form-row" id="current_topic">
+					  			
+							</div>
+						</div>
+						
+					
+				 	<div id="owl-demo" class="text-center">   
+				 	        <% if (locals.data.bigclass) {%>
+			                   <% locals.data.bigclass.forEach(function(cat){%>     
+							<div class="item">
+								<div class="section_box">
+								  <a href="" id="myhide"><div class="product_icon"  data-value="<%= cat.id %>">
+									<i class="fas fa-at"></i>
+								  </div><br>
+								  
+								  <h5><%= cat.name %></h5></a>
+								</div>
+							</div>
+							 <% }) %>
+			                <% } %>
+			            </div>
+			                <div id="owl-demo" class="text-center">   
+				 	        <% if (locals.data.topics) {%>
+			                   <% locals.data.topics.forEach(function(cat){%>     
+							<div class="item">
+								<div class="section_box">
+								  <a href="#/" id="myhide"><div class="subject_icon"  data-value="<%= cat.id %>">
+									<i class="fas fa-at"></i>
+								  </div><br>
+								  
+								  <h5><%= cat.name %></h5></a>
+								</div>
+							</div>
+							 <% }) %>
+			                <% } %>
+						
+						</div>
+                 </div>
+				
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    
+    <%- include ../sitelayouts/footer.ejs %>
+   <script type="text/javascript">
+   	$(document).on('change','#data',function(){
+     $('#owl-demo').hide();
+    var html = '';
+  $.get('selectclass?id='+$(this).val() + '&sid='+$('#myid').data("custom-value"),function(res){
+  	//location.reload()
+    
+  },'json')
+
+})
+$(document).on('click','.subject_icon', function(){
+$('.section_box').hide();
+ var html = '';
+  $.get('selectdesc?id='+$(this).data("value"),function(res){
+   $.each(res,function(key,val){
+     
+      html += '<h5>'+ val.description + '</h5>';
+    
+    
+    })
+      $('#current_topic').html(html)
+    
+  },'json')
+	
+})   
+
+$(document).on('click','.product_icon', function(e){
+ //alert('k');
+// return;
+e.preventDefault()
+ $('#owl-demo').css('display','none');
+var html = '';
+console.log($(this).data("value"));
+  $.get('selectclass?id='+$(this).data("value") + '&sid='+$(this).data("subject_id"),function(res){
+   $.each(res,function(key,val){
+      html += '<div class="col-md-6 col-sm-6 col-lg-3">';
+      html += '<div class="subject_box" >';
+      html += '<a>';
+      html += '<div class="subject_icon" data-value =' + val.id + '>';
+      html += '<i class="fas fa-at"></i>';
+      html += '</div><br>';
+      html += '<h5>'+ val.name + '</h5>';
+      html += '</a>';
+      html += '</div>';
+      html += '</div>';
+    })
+      $('#current_topic').html(html)
+    
+  },'json')
+
+})
+
+$(document).on('click','.nav-link' , function(){
+$('#owl-demo').hide();
+$('.nav-link').removeClass('active')
+$(this).addClass('active');
+
+ var subject_id = $(this).data("value") 
+   var html = '';
+  $.get('myselect',function(res){
+   $.each(res,function(key,val){
+      html += '<div class="item">';
+      html += '<div class="subject_box" >';
+      html += '<a href="#/">';
+      html += '<div class="product_icon" data-value =' + val.id + ' data-subject_id='+ subject_id +'>';
+      html += '<i class="fas fa-at"></i>';
+      html += '</div><br>';
+      html += '<h5>'+ val.name + '</h5>';
+      html += '</a>';
+      html += '</div>';
+      html += '</div>';
+    })
+      $('#current_topic').html(html)
+    
+  },'json')
+
+
+})
+
+
+
+ 
+   </script> 	

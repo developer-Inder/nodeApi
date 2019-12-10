@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="11"><page Index="1"><![CDATA[Answer Sheet  (Mock Test-1)
+                                 (PHYSICS)
+                     1. (d)   2. (c)  3. (a)  4. (d)  5. (c)
+                     6. (b)   7. (a)  8. (c)  9. (c)  10. (a)
+
+                    11. (b)  12. (b)  13. (b)  14. (c)  15. (c)
+                    16. (b)  17. (b)  18. (b)  19. (b)  20. (c)
+                    21. (a)  22. (a)  23. (a)  24. (d)  25. (b)
+                    26. (a)  27. (c)  28. (c)  29. (d)  30. (b)
+                    31. (a)  32. (d)  33. (c)  34. (c)  35. (c)
+                    36. (a)  37. (c)  38. (d)  39. (b)  40. (d)
+
+
+
+
+                        Hints & Solutions Mock Test–1 Solutions (Physics)
+                    1.  The fringe width in air is given by
+                                        Dλ
+                                     β =                 …(i)
+                                        2d
+                        where D = distance of screen from slits
+                                     = 2.5 m
+                        λ = wavelength of light used = 6000 Å
+                        2d = separation between slits
+                        fringe width β = 0.8 mm
+                        When the whole apparatus is dipped in
+                        water, then
+                                         λ
+                                     λ w  =             …(ii)
+                                         μ
+                        μ = refractive index of medium = 1.6
+
+                                        Dλ w
+                        So, that    β′ =
+                                         2d
+                                        Dλ
+                        or          β′ =            [from (ii)]
+                                        2dμ
+                                         β
+                        or           β′ =           [from  (i)]
+                                         μ
+                                         0.8
+                        Hence,         =    = 0.5 mm
+                                         1.6
+                    2.  Equivalent capacitance of 2 μF and 3 μF
+                        capacitors which are connected in series
+                                  2 × 3  6
+                               C =     =   = 1.2 μF
+                                  2 + 3  5
+                        In each capacitor, charge will be same
+
+                        ∴    q = CV = 1.2 × 10 − 6  × 2000
+                                           −3
+                                   = 2.4 × 10  C
+                                                  −3
+                                       q   2.4 × 10
+                        Now, V  − V  =    =
+                               A
+                                    B
+                                       C 1  2 × 10 −6
+                                             3
+                                         = 1.2 × 10  = 1200 V
+                        But       V  = 2000 V
+                                   A
+                        ∴         V B  = 2000 − 1200 = 800 V]]></page><page Index="2"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                    3.  From lens maker’s formula
+                                 1        ⎛ 1   1 ⎞
+                                      = (μ − 1)  ⎜   −   ⎟
+                                 f        ⎝ R 1  R 2 ⎠
+                        Here : μ = 1.5, R 1  = 20 cm, R 2  = − 20 cm
+                                  1         ⎛ 1   1 ⎞
+                        So,           = (1.5 − 1)  ⎜   +   ⎟
+                                  f         ⎝ 20  20 ⎠
+                                  1       2
+                        or          = 0.5 ×
+                                  f      20
+                                  1  1
+                        or          =
+                                  f  20
+                        ∴         f = 20 cm
+                        The incident light rays parallel to the axis
+                        of lens will converge at the focus.
+                        Hence, d = f = 20
+                        or        d = 20 cm
+
+                    4.  Let angle of inclination is θ.
+
+
+
+
+
+
+
+
+
+
+
+
+                                           h
+                                    tan θ =              …(i)
+                                           b
+                        For turning of a car without skidding
+                                           2
+                                          v
+                                   tan θ =              …(ii)
+                                          Rg
+                        From equations (i) and (ii), we get
+                                       h  =   v 2
+                                       b   Rg
+                                            2
+                                           v b
+                        Hence,         h =
+                                           Rg
+                                   2
+                    5.  Given: φ = 6t  + 7t + 1
+                        where φ is in millimeter
+                        The induced emf is given by
+                                        dφ
+                                          e =
+                                        dt
+                                    d
+                                        2
+                        or         e =   (6t  + 7t + 1)
+                                    dt
+                                            d
+                                                    d
+                                    d
+                                        2
+                      or             e =   (6t ) +   (7t) +   (1)
+                                    dt      dt     dt
+                                  = 12t + 7 + 0
+                                  = 12t + 7
+                        Putting  t = 2 sec
+                                e  t = 2  = 12 × 2 + 7
+                                  = 24 + 7 = 31 mV
+                    6.  In vacuum, the speed of electromagnetic
+                        wave is
+                                         1
+                                    c =
+                                       √ ⎯⎯⎯⎯μ 0 ε 0]]></page><page Index="3"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                    7.  The total charge passing through bulb is
+                                      q = it             ...(1)
+                        Here, i = 0.5 A, t = 1 hour
+                           t = 1 × 60 × 60 sec t = 3600 sec
+                        from eq. (i)
+                        q = 0.5 × 3600 = 1800 coulomb
+
+                    8.  In  an iron-copper thermocouple, the
+                        current flows from copper to iron at the
+                        hot junction.
+
+                    9.  Suppose the two identical cells have
+                        internal resistance equal to r.
+                        When they are  connected  in series,  the
+                        current
+                                     2E     2E
+                                I 1  =    =              …(i)
+                                   R + 2r  2 + 2r
+                                                  . .
+                                                  [ .    R = 2 Ω]
+                        Again  when they are connected in
+                        parallel, the current
+                                  E       2E    2E
+                            I 2  =     =      =         …(ii)
+                                   ⎛r⎞  2R + r  4 + r
+                                R +  ⎜ ⎟
+                                    2
+                                   ⎝ ⎠
+                        According to the question I 1  = I 2
+                                    2E    2E
+                        ⇒               =
+                                  2 + 2r  4 + r
+                        ⇒         2 + 2r = 4 + r
+                        ⇒          2r − r = 4 − 2
+                        ⇒              r = 2 Ω
+
+                   10.  When a wire  of  resistance  R is divided
+                        in 10 equal parts, then each wire will
+                                           R
+                        have a resistance of    Ω.
+                                           10
+                        In parallel combination, their equivalent
+                        resistance is :
+                           1   10  10   10
+                              =    +    +    + … 10 times
+                           R′  R    R   R
+                           1   100
+                        ⇒     =
+                           R′   R
+                                R
+                        ⇒ R′ =     ⇒ R′ = 0.01 R
+                               100
+
+                   11.   The  work done  in carrying  a charge of
+                        50 μC from A to B is given by
+                        W = charge × potential difference
+                        W = q × (V B  − V A )
+                                               −3     −2
+                        Here : W = 10 mJ = 10 × 10  J = 10  J
+                                       q = 50 μC = 50 × 10 − 6  C
+                                      W
+                        ∴  (V  − V ) =
+                              B
+                                  A
+                                       q
+                                           −2      4
+                                         10      10
+                                     =          =    = 200 V
+                                      50 × 10 − 6  50]]></page><page Index="4"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   12.  The given circuit can be modified as
+                        The equivalent capacitance of  C    2
+                        and C 3  is
+                            C′ = C  + C  = 6 + 12 = 18 μF
+                                 2
+                                     3
+
+
+
+
+
+
+
+
+
+                        The equivalent capacitance of C  and C′
+                                                    1
+                                        C 1  × C′
+                        i.e.      C AB  =
+                                        C  + C′
+                                         1
+                                        9 × 18
+                        ⇒         C AB  =
+                                        9 + 18
+                        ⇒         C AB  = 6 μF
+                        Since, C 1  and C′ are in series, therefore,
+                        charge on C 1  and C′ will be same
+                        i.e.       q = C AB  × V
+                                    = 6 × 90 = 540 μC
+                        Now the potential on 6 μF and 12 μF are
+                        same,
+                                      q   540
+                        So,       V′ =    =    = 30 V
+                                      C′   18
+                        Hence, charge on 6 μF capacitor is
+                               q 6  = 30 × 6 = 180 μC
+
+                   13.  Since, 2 μF and 3 μF capacitors  are in
+                        parallel.
+                        So, their effective capacitance is
+                                 C′ = 2 + 3 = 5 μF
+                        Now 12 μF, 20 μF and C′ are in series.
+                        Therefore, their effective capacitance is
+                                 1   =   1   +   1   +  1
+                                 C   12  20   5
+                                     5 + 3 + 12  20
+                                   =          =
+                                        60     60
+                                     60
+                        Hence,   C =    = 3 μF
+                                     20
+                                     q
+                        Now    V AB  =
+                                     C
+                        The charge  at  C′, 20 μF and 12 μF
+                        capacitors is equal
+                                       q
+                        ∴         1500 =
+                                       3
+                        or          q = 4500 μC
+                        Hence, potential difference  across  2 μF
+                        capacitor
+                                       q   4500
+                                     V 2  =    =    = 900 V
+                                      C′    5
+                        So, energy stored in 2 μF capacitor will be
+                                1  2 1        − 6
+                             U =  CV =   × 2 × 10   × 900 × 900
+                                2     2
+                                            −2
+                                    = 81 × 10  = 0.81 J]]></page><page Index="5"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   14.  Since, the charge on an  electron and a
+                        proton is equal and opposite,  therefore,
+                        they will constitutes a electric dipole.
+                        ∴ dipole moment is given by p = 2ql
+                        ⇒           p = q × 2l           ...(1)
+
+                        Here :         q = 1.6 × 10 −19  C
+                                   2l = 1 Å = 1 × 10 −10  m
+                                             −19       −10
+                        from eq. (1)  p = 1.6 × 10   × 1 × 10
+                                             −29
+                                     = 1.6 × 10
+                   15.  According to coulomb’s law,  the  force
+                        between two electrons is given by
+                                        1  q q
+                                            1 2
+                                    F =
+                                       4πε 0 r 2
+                                        1
+                        or              F ∝
+                                        r 2
+                        or          F ∝ r −2
+
+                   16.  The forbidden energy gap of germanium
+                        crystal is about 0.75 eV at room
+                        tempearature.
+
+                                                ⎛1⎞ t   ⁄ T   ⁄ 2
+                                                     1
+                   17.   Using the relation N = N   ⎜ ⎟
+                                              0
+                                                 2
+                                                ⎝ ⎠
+                                 N    1
+                        Here :          =    and t = 30 sec
+                                N 0  64
+                                 1   ⎛1⎞ 30   ⁄ T 1   ⁄ 2
+                        So,         =   ⎜ ⎟
+                                      2
+                                 64  ⎝ ⎠
+                                  ⎛1⎞ 6  ⎛1⎞ 30   ⁄ T   ⁄ 2
+                                               1
+                        or            ⎜ ⎟  =   ⎜ ⎟
+                                         2
+                                   2
+                                  ⎝ ⎠    ⎝ ⎠
+                                         30
+                        or           6 =
+                                         1
+                                        T   ⁄ 2
+                        Hence,    T 1   ⁄ 2  = 5 sec
+                   18.   According to Mosley’s law ν = a(Z − b) 2
+                                         2
+                        or              ν ∝ Z                      ...(i)
+                                        1
+                        and              ν ∝                     …(ii)
+                                        λ
+                        Therefore, from equations (i) and (ii),
+                        we get
+                                1    2        1
+                                λ  ∝ Z  or λ ∝  Z 2]]></page><page Index="6"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   19.  Using the relation for momentum of an
+                        electron.
+                                   p = √⎯⎯⎯⎯⎯2mE         …(i)
+                        de-Broglie wavelength is given by
+                                       h   h
+                                   λ =    =
+                                       mv  p
+                                         h
+                        So,        λ =                  …(ii)
+                                       √ ⎯⎯⎯⎯⎯2mE
+                        where h = Planck’s constant
+                                             −34
+                                     = 6.6 × 10   J.s
+                        E = kinetic energy of electrons
+                                     = 100 eV
+                                 = 100 × 1.6 × 10 −19  V
+                        m = mass of an electron = 9.1 × 10 −31  kg
+                        Therefore, from eq. (ii)
+
+                                        6.6 × 10 −34
+                          λ =
+                             √ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯2 × 9.1 × 10 −31  × 100 × 1.6 × 10 −19
+
+                           = 1.22 × 10 −10  m
+                           = 1.22 Å ≈ 1.2 Å
+
+                   20.  For photoelectric emission, it is necessary
+                        that the wavelength of the incident light
+                        is less than threshold value.
+                        i.e.,        λ < λ 0
+
+                        Hence, the photo emission occurs  for
+                                                      −7
+                        light of wavelength below 5 × 10  m.
+                   21.  For curing of  myopia, concave  lens of
+                        focal length equal to the distance of eye’s
+                        own far point is used.
+                        i.e.         f = − d
+                        Hence, if distance d is doubled, then focal
+                        length will also doubled.
+
+                   22.  From lens maker’s formula
+                               1        ⎛ 1   1 ⎞
+                                 = (μ − 1)  ⎜   −   ⎟
+                               f        ⎝ R 1  R 2 ⎠
+                                     1
+                        ⇒       f ∝
+                                   (μ − 1)
+                        ⇒       f ∝  1                   …(i)
+                                   μ
+                                         1
+                        and          μ ∝                …(ii)
+                                         λ
+                        So,           f ∝ λ
+                        But wavelength of red light is  more as
+                        compared to other given  light. Hence,
+                        focal length of convex lens is maximum
+                        for red light.]]></page><page Index="7"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   23.  The fringe width is given by
+                                        Dλ
+                                     β =
+                                        2d
+                        ⇒             β ∝ λ
+                        But       λ red  > λ yellow
+                        Hence, fringe width increases.
+                   24.  In a transverse  stationary wave on a
+                        string, when the particle passes  their
+                        mean    position,  their  velocity  is
+                        maximum. Since, all particles pass their
+                        mean positions simultaneously, the string
+                        becomes straight when the kinetic energy
+                        is maximum.
+
+                   25.   Using the relation I ∝ a 2
+
+                                 I max  (a  + a ) 2
+                                        1
+                                            2
+                        So,          =                   ...(i)
+                                 I min  (a 1  − a 2 ) 2
+                                2
+                                   2
+                        Given : a 1  : a 2  = 1 : 9   ⇒ a 1  : a 2  = 1 : 3
+                        Let        a 1  = x,   a 2  = 3x
+                        Therefore, from equation (i), we get
+                                 I max  (x + 3x) 2
+                                       =
+                                 I min  (x − 3x) 2
+                                       16  4
+                                     =    =
+                                        4  1
+                                 I min  1
+                        Hence,        =
+                                 I max  4
+
+                   26.  Comparing the given equation
+                               y = 3 cos π (100t − x)
+                        with standard equation
+                               y = a cos (ωt − kx)
+                        We have,
+                                             2π
+                               k = π  But k =
+                                             λ
+                                        2π
+                        ∴            π =
+                                         λ
+                        or           λ = 2 cm]]></page><page Index="8"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   27.  We know the relation
+                             I ∝ (a  + a  + 2a a  cos φ)
+                                  2
+                                      2
+                                  1
+                                      2
+                                          1 2
+                        For intentisity to be maximum
+                                   cos φ = + 1
+                        or             φ = 2nπ
+                        where          n = 0, 1, 2, ........
+                        ∴ Path difference
+                                λ
+                            Δ =    × phase difference  φ
+                               2π
+                               λ
+                        or Δ =    × φ
+                              2π
+                               λ
+                        or Δ =    × 2nπ
+                              2π
+                        Hence, Δ = n λ
+
+                                       2 ⎛t⎞
+                   28.   Given : y = 4 cos   ⎜ ⎟  sin (1000t)
+                                         2
+                                        ⎝ ⎠
+                              ⎛t⎞ ⎡    ⎛t⎞         ⎤
+                        = 2 cos  ⎜ ⎟   ⎢ 2cos  ⎜ ⎟  sin (1000t) ⎥
+                                        2
+                               2
+                              ⎝ ⎠ ⎣    ⎝ ⎠         ⎦
+                              ⎛t⎞ ⎡   ⎛      t⎞⎤
+                        = 2 cos  ⎜ ⎟   ⎢ sin  ⎜ 1000t +  ⎟⎥
+                              ⎝ ⎠ ⎣   ⎝      2 ⎠⎦
+                               2
+                                            ⎛       t⎞⎤
+                                       − sin  ⎜ 1000t −  ⎟⎥    …(i)
+                                            ⎝       2 ⎠⎦
+                         . .
+                        [ .  cos A sin B = sin (A + B) − sin (B − A)]
+                        From equation  (i), it is clear  that it is  a
+                        superposition of three independent
+                        harmonic motions.
+
+                   29.  Heat taken by ice per sec
+                                        m × 8 × 10 4
+                              Q 1  = mL =
+                                            60
+                        Heat conducted through   rod per sec
+                                     KA (θ  − θ )
+                                              2
+                                          1
+                                Q  =
+                                  2
+                                          l
+                                           −3
+                                     92 × 10  (100° − 0°)
+                                   =
+                                             1
+                        According to the law of calorimetry
+                        heat taken = heat given
+                                 4        −3
+                        m × 8 × 10  92 × 10  (100˚ − 0˚)
+                                   =
+                            60              1
+                                          −3
+                                    92 × 10  × 100˚ × 60
+                                   m =
+                                          8 × 10 4
+                                          −3
+                                       = 6.9 × 10  kg]]></page><page Index="9"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   30.  Since,  A is compressed isothermally,
+                        therefore, we have
+                                   P 1 V 1  = P 2 V 2
+                                            V
+                        ⇒          P V = P
+                                          2
+                                     1
+                                            2
+                        ⇒            P  = 2P 1
+                                      2
+                        Again    since,  B   is   compressed
+                        adiabatically, therefore,
+                                      γ       γ
+                                 P V    = P ′V
+                                             2
+                                   1 1
+                                          2
+                                               γ
+                                      γ    ⎛V⎞
+                        ⇒         P 1 V   = P 2 ′ ⎜ ⎟
+                                            2
+                                           ⎝ ⎠
+                                          γ
+                        ⇒           P 2 ′ = 2   × P 1
+                        Since,               γ > 1
+                        So             P ′ > P 2
+                                        2
+                        ⇒              P 2  < P 2 ′
+                        Hence, final  pressure of  A is less  than
+                        final pressure of B.
+                   31.  At boiling point,  all the substances are
+                        converted into vapour.  Because boiling
+                        point of alcohal is lower than boiling
+                        point of water, so it will vaporise earlier
+                        as compared to water, i.e., alcohal is more
+                        volatile than water.
+                   32.  The rms velocity of the molecules is
+                        v rms  = √⎯⎯⎯⎯⎯⎯⎯        2
+                                      2
+                                             2
+                                  2
+                                          2
+                                 1  + 2  + 3  + 4  + 5
+                                         5
+                                  55
+                               = √⎯⎯  = √⎯⎯⎯11 km   ⁄ sec
+                                   5
+                        Now the average velocity of molecules is
+                                      1 + 2 + 3 + 4 + 5
+                             v average  =
+                                            5
+                                      15
+                                    =    = 3 km   ⁄ sec
+                                      5
+                        Hence v rms  : v average  = √⎯⎯⎯11 : 3
+
+                   33.  We know that
+                                     E ∝ T
+                        Therefore, the kinetic  energy does not
+                        depend upon the molecules of the gas.
+                        Hence, the kinetic energies of  both the
+                        gases at a given temperature are same.
+                        or       E H  : E O  = 1 : 1
+                                    2   2]]></page><page Index="10"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   34.  From the relation, the work done in
+                        increasing the surface area of a liquid by
+                        Δ A is given by
+                                    W = TΔA
+                        Here :   ΔA = A (at a certain temperature)
+                        So, gain in surface energy
+                            = work done W = TA = AT
+
+
+                   35.  A  body undergoes a change  in shape
+                        without change in volume.
+
+                   36.  From the law of Young’s modulus
+                                        FL
+                                     Y =
+                                         Al
+                        where F = force acting on the wire
+                        L = initial length of the wire
+                        l = extention in the length of wire
+                        A = area of the cross  hyphen section of
+                        wire
+                        ⇒            l =  FL
+                                        YA
+                        ⇒            l ∝  L              …(i)
+                                        A
+                                                ⎛F          ⎞
+                                                ⎜  = constant ⎟
+                                                ⎝ Y         ⎠
+                        From the above relation (i)  we  sec  that
+                        extension is more for option (a).
+
+                   37.  Using the relation
+                                          ⎛GM⎞
+                        Weight  w = mg = m  ⎜  2 ⎟       …(i)
+                                          ⎝  R  ⎠
+                                    GMm
+                        and     U =
+                                      r
+                                    Ur
+                        or    GM =                      …(ii)
+                                    m
+                                      ⎛Ur⎞   1
+                        So,      w = m ⎜  ⎟  ×
+                                      ⎝  m ⎠  R 2
+                                       ⎛Ur⎞  ⎛ 1 ⎞ 2
+                                   = m  ⎜  ⎟  ×  ⎜  ⎟
+                                       ⎝  m  ⎠  ⎝ 2r ⎠
+                                       ⎛Ur⎞   1
+                                   = m  ⎜  ⎟  ×
+                                       ⎝  m  ⎠  4r 2
+                                     U
+                        Hence,   w =
+                                     4r
+                   38.  The centre of mass will not move, because
+                        there is no external force. There is a force
+                        of mutual attraction under which centre
+                        of mass will not shift.
+                        Hence, speed of centre of mass is zero.]]></page><page Index="11"><![CDATA[Mock  Test–1 Solutions (Physics)
+
+
+                   39.  Using the relation τ = Iα
+                        Torque = moment of inertia
+                                         × angular acceleration
+
+                   40.  Let the initial kinetic energy is 100%.
+                        Final kinetic energy
+                        = (300 + 100)% = 400%
+                               (K.E.)     400   4
+                        So,         final   =    =
+                               (K.E.) initial  100  1
+
+                        From the relation, we have
+                                           p 2
+                                       E =
+                                          2m
+                                       2
+                        or            p  ∝ E
+                        or             p ∝ √⎯⎯E
+
+                                             (K.E.)
+                                   p final  = √⎯⎯⎯⎯⎯
+                                                  final
+                        ∴
+                                   p initial  (K.E.) initial
+                                         = √⎯ 4
+                                            1
+                                          2
+                        So,         p    =   × p   = 2p
+                                     final  1  initial
+                        ∴ increase in momentum = 2p − p = p
+                        % increase in momentum
+                                          p
+                                         =   × 100% = 100%
+                                          p]]></page></pages></Search>

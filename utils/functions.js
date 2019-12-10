@@ -1,0 +1,3 @@
+encryptData = () => {};
+
+module.exports = { encryptData };

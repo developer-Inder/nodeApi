@@ -1,0 +1,21 @@
+<div class="filter_bar">
+    <% console.log(locals.data); %>
+    <% if (locals.data.sub) { %>
+  <% locals.data.sub.forEach(function(cat){%>	   
+     <a href="subject-wise?id=<%= cat.id %>"><i class="fas fa-chevron-right"></i> Subject Wise</a>
+      <% }) %>
+      <% } %>
+    
+    <% if (locals.data.boards) { %>
+  <% locals.data.boards.forEach(function(cat){%>
+     <a href="board-material?id=<%= cat.id %>"><i class="fas fa-chevron-right"></i> Study Material By Board</a>
+
+    <% }) %>
+      <% } %>
+     <a href="entranc-exam"><i class="fas fa-chevron-right"></i> Extrance Exam Wise</a>
+     
+     <a href="#"><i class="fas fa-chevron-right"></i> GOVT. Exam Wise</a>
+     <a href="#"><i class="fas fa-chevron-right"></i> UR Interset Wise</a>
+   <a href="#"><i class="fas fa-chevron-right"></i> Engineering Study Material</a>
+   <a href="#"><i class="fas fa-chevron-right"></i> Medical Study Material</a>
+ </div>

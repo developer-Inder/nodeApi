@@ -1,0 +1,86 @@
+<!--
+including header content which is common for all pages
+-->
+<%- include ../../adminlayouts/header.ejs %>
+<script></script></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<div class="content-wrapper">
+  <section class="content-header">
+    <h1>
+      Add Board
+    </h1>
+
+    <div class="row">
+      <div class="col-md-6">
+
+
+        <% if (messages.error) { %>
+        <p style="color:red"><%- messages.error %></p>
+        <% } %>
+
+        <% if (messages.success) { %>
+        <p style="color:green"><%- messages.success %></p>
+        <% } %>
+
+        <form class="form-horizontal" action="/admin/board/addboard" method="post" name="form2">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Board Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="name" value="" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary pull-right">Add</button>
+        </form>
+
+      </div>
+      <div class="col-md-6">
+
+
+        <div id="app">
+          {{ message }}
+        <div v-for = "(board,index) in boards"  class="list-group">
+          <div class="list-group-item" v-model="board.name">
+            <a >{{board.name}}</a>
+            <button v-on:click= "deleteBoard(index)" v-bind:data-board-id = "board.id" class="btn btn-primary pull-right">Delete</button>
+            <button v-bind:data-board-id = "board.id" type="submit" class="btn btn-primary pull-right">Edit</button>
+          </div>
+          
+        </div>
+
+
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!',
+    boards: <%- JSON.stringify(boards) %>  // JSON.parse(JSON.stringify(this.boards))  can also be used
+  },
+  methods:{
+    deleteBoard: function(index){  
+      //  var boards = JSON.parse(JSON.stringify(this.boards))
+      // var el = e.target.getAttribute('data-board-id')
+      // console.log(el)
+      // this.boards.splice(this.boards.indexOf(el),1)
+      this.boards.splice(index, 1)
+    },
+    editBoard: ()=>{
+      console.log(JSON.parse(JSON.stringify(this.boards)))
+
+    }
+  }
+})
+</script>
+
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../../adminlayouts/footer.ejs %>

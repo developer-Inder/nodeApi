@@ -1,0 +1,242 @@
+
+    <!-- Footer Section -->
+    <div class="footer_bg">
+      <div class="container-fluid">
+       <div class="row">
+          <div class="col-lg-5 col-sm-12">
+            <div class="footer_link">
+              <img src="../images/s.jpg" alt="" width="130">
+              <p class="mt-3 mb-1 pr-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p class="pr-3">Lorem Ipsum has been the industry's standard dummy text. printing and typesetting.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <div class="footer_link">
+              <h5>Usefull Links</h5>
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Our Services</a>
+              <a href="#">Testimonial</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <div class="footer_link">
+              <h5>Category</h5>
+              <a href="#"><!--i class="fas fa-angle-right"></i--> Home</a>
+              <a href="#"> About Us</a>
+              <a href="#"> Our Services</a>
+              <a href="#"> Testimonial</a>
+              <a href="#"> Contact Us</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4">
+            <div class="footer_contactlink">
+              <h5>Contact Us</h5>
+              <a href=""><i class="fas fa-map-marker-alt mr-2"></a>Corporate Square, Sector 75 Mohali </a>
+              <a href=""><i class="fas fa-phone-volume mr-2"></i> +91 9815576021</a>
+              <a href=""><i class="fas fa-envelope mr-2"></i> revoedubook@gmail.com</a>
+              <a href=""><i class="fas fa-envelope mr-2"></i> revoedubookteam@gmail.com</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<!-- Copyright Section -->
+    <div class="copy_right">
+      <div class="container-fluid">
+		<p>	&#169; copyright 2018. All Right Reserved</p>
+      </div>
+    </div>
+
+
+
+
+<!-- large modal -->
+<div class="modal fade register_form" id="register" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title text-center" id="myModalLabel">Register</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form" action="/registration/user_registration" id="myform" method="post">
+			<div class="form-row">
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>First Name:</label>
+				  <input type="text" class="form-control" name="fname" required="true">
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>Last Name:</label>
+				  <input type="text" class="form-control" name="lname" required="true">
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>Email:</label>
+				  <input type="email" class="form-control" name="email" required="true">
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>Phone:</label>
+				  <input type="number" class="form-control" name="phone" required="true">
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>Password:</label>
+				  <input type="password" class="form-control" name="password" id="password" required="true">
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="form-group">
+				  <label>Confirm Password:</label>
+				  <input type="password" class="form-control"  name="cpassword" id="mychange" required="true">
+				</div>
+				</div>
+				<div class="col-md-12">
+				<button type="submit" class="btn btn-success register_btn my-2">Submit</button>
+				<button type="button" class="btn btn-default cancel_btn  my-2" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</form>
+      </div>
+      <!--div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div-->
+    </div>
+  </div>
+</div>
+
+     <!-- Js Files -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo, #owl-demo1").owlCarousel({
+				//autoPlay: 3000, //Set AutoPlay to 3 seconds
+				items: 5,
+				itemsDesktop: [1199, 4],
+				itemsDesktopSmall: [992, 3],
+				itemsTablet: [768, 2],
+				itemsMobile: [479, 2],
+				stopOnHover: true,
+				loop: true,
+				navigation:true,
+				navigationText: ["<i class='fas fa-angle-right'></i>","<i class='fas fa-angle-left'></i>"]
+			});
+		});
+	</script>
+    <script>
+    jQuery.fn.liScroll = function(settings) {
+    settings = jQuery.extend({
+    travelocity: 0.03
+    }, settings);   
+    return this.each(function(){
+        var $strip = jQuery(this);
+        $strip.addClass("newsticker")
+        var stripHeight = 1;
+        $strip.find("li").each(function(i){
+          stripHeight += jQuery(this, i).outerHeight(true); // thanks to Michael Haszprunar and Fabien Volpi
+        });
+        var $mask = $strip.wrap("<div class='mask'></div>");
+        var $tickercontainer = $strip.parent().wrap("<div class='tickercontainer'></div>");               
+        var containerHeight = $strip.parent().parent().height();  //a.k.a. 'mask' width   
+        $strip.height(stripHeight);     
+        var totalTravel = stripHeight;
+        var defTiming = totalTravel/settings.travelocity; // thanks to Scott Waye   
+        function scrollnews(spazio, tempo){
+        $strip.animate({top: '-='+ spazio}, tempo, "linear", function(){$strip.css("top", containerHeight); scrollnews(totalTravel, defTiming);});
+        }
+        scrollnews(totalTravel, defTiming);       
+        $strip.hover(function(){
+        jQuery(this).stop();
+        },
+        function(){
+        var offset = jQuery(this).offset();
+        var residualSpace = offset.top + stripHeight;
+        var residualTime = residualSpace/settings.travelocity;
+        scrollnews(residualSpace, residualTime);
+        });     
+      }); 
+    };
+
+    $(function(){
+      $("ul#ticker01").liScroll();
+    });
+  </script>
+  <script type="text/javascript">
+          $(document).ready(function () {
+        $('.arrow_change').click(function(){
+            icon = $(this).find("i");
+            icon.toggleClass("fas fa-angle-down fas fa-angle-right") 
+        })
+          });
+      </script>
+      <script>
+   
+      //alert('ok');
+   
+     
+
+     $(document).on('submit','#myform',function(e){
+       // alert('ok');
+                    e.preventDefault();
+                 var pass = $('#password').val();
+                 var cpass = $('#mychange').val();
+                  if(pass!== cpass){
+
+                  alert('Password Did Not Matched!!');
+
+
+                    $('#password').focus();
+                    $('#password').css('box-shadow', '0 0 0 0.2rem rgba(226, 8, 18, 0.25');
+                   $('#password').css('border-color', 'red');
+
+                    $('#mychange').focus();
+                    $('#mychange').css('box-shadow', '0 0 0 0.2rem rgba(226, 8, 18, 0.25');
+                   $('#mychange').css('border-color', 'red');
+
+                   
+
+                      return false;
+
+                   }else{
+                    var formData = new FormData(this);  
+                    console.log()                
+                    $.post({
+                        type:'POST',
+                        url:$(this).attr('action'),
+                        data:formData,
+                        cashe:false,
+                        contentType:false,
+                        processData:false,                      
+                        success:function(data){
+                         //  alert(data)
+                            alert(data.message);
+                            location.reload();
+                        },
+                        error:function(data){
+                            
+                            alert(data.message);
+                        }
+                    },'json');
+
+                  }
+                });
+     
+      </script>
+     
+  </body>
+</html>

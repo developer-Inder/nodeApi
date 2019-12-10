@@ -1,0 +1,318 @@
+<html>
+
+<head>
+    <title>Home Page Reb</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".dropdown, .btn-group").hover(function () {
+                var dropdownMenu = $(this).children(".dropdown-menu");
+                if (dropdownMenu.is(":visible")) {
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        });		
+    </script>
+
+
+    <style>
+        h1 {
+            color: rgb(83, 65, 204);
+            text-align: center;
+            margin-top: 93px;
+            font-size: 65px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+        }
+
+        #myNavbar {
+            background-color: rgb(83, 65, 204);
+            color: white;
+            padding: 0 auto;
+
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .dropdown:hover .dropdown-menu,
+            .btn-group:hover .dropdown-menu {
+                display: block;
+
+            }
+            .dropdown-menu {
+                margin-top: 0;
+                background-color: inherit;
+            }
+            .dropdown-toggle {
+                margin-bottom: 2px;
+            }
+            .navbar .dropdown-toggle,
+            .nav-tabs .dropdown-toggle {
+                margin-bottom: 0;
+                color: white;
+            }
+        }
+    </style>
+
+    <body>
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/reb">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Users</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/users/add">Add New User</a>
+                            </li>
+                            <li>
+                                <a href="/reb/users">User List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Classes</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/class/addclass">Add New Class</a>
+                            </li>
+                            <li>
+                                <a href="/reb/class">Class List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Content</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb//contents/addcontent">Add New Content</a>
+                            </li>
+                            <li>
+                                <a href="/reb/contents/viewpage">View Page</a>
+                            </li>
+                            <li>
+                                <a href="/reb/contents">Content List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Eligibilities</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/eligible/addeligibility">Add New Eligibility</a>
+                            </li>
+                            <li>
+                                <a href="/reb/eligible">Eligibility List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Fields</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/fields/addfield">Add New Fields</a>
+                            </li>
+                            <li>
+                                <a href="/reb/fields">Field List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Streams</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/streams/addstream">Add New Stream</a>
+                            </li>
+                            <li>
+                                <a href="/reb/streams">Stream List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Subjetcs</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/subject/addsubject">Add New Subject</a>
+                            </li>
+                            <li>
+                                <a href="/reb/subject">Subject List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Exams</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/exam/addexam">Add New Exam</a>
+                            </li>
+                            <li>
+                                <a href="/reb/exam">Exam List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Teachers</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/reb/teacher/addteacher">Add New Teacher</a>
+                            </li>
+                            <li>
+                                <a href="/reb/teacher">Teachers List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>R.E.B</h1>
+
+        <hr>
+
+
+
+
+        <script src="https://cdn.ckeditor.com/4.10.0/standard-all/ckeditor.js"></script>
+
+<style>
+        .container{  
+               text-align: center;
+               margin: 0 auto;
+               text-justify: auto;   
+               padding-top:40px;
+            }
+        </style> 
+      
+      <div class="container">     
+      <form class="form-horizontal" id = "myForm" action="/reb/contents/addcontent" method="post" name="form3">
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="pdf_link">PDF-Link:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="pdf_link" id="pdf_link" value="<%- pdf_link %>"/>
+            </div>
+            </div>
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="heading">Heading:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="heading" id="heading" value="<%- heading %>"/>
+            </div>
+           </div>
+      
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="content">Content:</label>
+              <div class="col-sm-10">
+                <textarea cols="10" id="editor1" name="content" rows="10" value="<%- content %>">
+                </textarea>
+            </div>
+            </div>
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="flipbook">Flipbook:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="flipbook" id="flipbook" value="<%- flipbook %>"/>
+            </div>
+            </div>
+      
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="keywords">Keywords:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="keywords" id="keywords" value="<%- keywords %>"/>
+            </div>
+            </div>
+      
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="tags">Tags:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="tags" id="tags" value="<%- tags %>"/>
+            </div>
+            </div>
+      
+      
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="owner">Owner:</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" name="owner" id="owner" value="<%- owner %>"/>
+            </div>
+            </div>
+      
+      
+              <input type="button" id='check' onclick="myFunction()" class="btn btn-primary" value="Add"/>	
+          </form>
+          </div>
+      
+          
+      <script>
+        
+             CKEDITOR.replace( 'editor1', {
+                  extraPlugins: 'mathjax',
+                  mathJaxLib: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML',
+                  height: 320
+              } );
+      
+              if ( CKEDITOR.env.ie && CKEDITOR.env.version == 8 ) {
+                  document.getElementById( 'ie8-warning' ).className = 'tip alert';
+              }
+          content = document.getElementById("editor1");
+      console.log(content);
+      document.querySelector("#check").addEventListener("click",function(event){
+      
+          var data = CKEDITOR.instances.editor1.getData();
+          myFunction(data);
+          console.log(data);
+      
+      function myFunction(data){
+                 document.getElementById("editor1").value = content;
+                 document.getElementById("myForm").submit();
+              }
+          
+      
+      
+      },false);
+          
+      </script>
+      
+      <!--
+      including footer content which is common for all pages
+      -->
+    </body>
+    </html>    
